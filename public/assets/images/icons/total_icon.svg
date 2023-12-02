@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="13.132487mm"
+   height="11.11991mm"
+   viewBox="0 0 13.132487 11.11991"
+   version="1.1"
+   id="svg8348"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   sodipodi:docname="total_icon.svg">
+  <defs
+     id="defs8342" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="3.959798"
+     inkscape:cx="-2.7740295"
+     inkscape:cy="10.872578"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1866"
+     inkscape:window-height="1016"
+     inkscape:window-x="54"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata8345">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-130.17247,-243.08515)">
+    <path
+       d="m 136.73738,251.42508 h -3.93673 v -3.47504 h -1.3126 v 5.55969 a 0.67574583,0.67574583 0 0 0 0.65617,0.69506 h 5.25039 a 0.67574583,0.67574583 0 0 0 0.65616,-0.69506 v -5.55969 h -1.31339 z m 6.45266,-5.25145 -1.74916,-2.77998 a 0.65061042,0.65061042 0 0 0 -0.54769,-0.3085 h -8.30977 a 0.644525,0.644525 0 0 0 -0.54557,0.3085 l -1.74942,2.77998 a 0.69744167,0.69744167 0 0 0 0.54557,1.08162 h 11.81073 a 0.69876458,0.69876458 0 0 0 0.54531,-1.08162 z m -2.51354,7.68403 a 0.33919583,0.33919583 0 0 0 0.32808,0.3474 h 0.65617 a 0.33919583,0.33919583 0 0 0 0.32808,-0.3474 v -5.90762 h -1.31312 z"
+       class="cls-53"
+       data-name="Icon awesome-store-alt"
+       id="Icon_awesome-store-alt"
+       inkscape:connector-curvature="0"
+       style="fill:#d6d6d6;stroke-width:0.26458332" />
+  </g>
+</svg>

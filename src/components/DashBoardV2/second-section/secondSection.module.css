@@ -1,0 +1,94 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-gap: 2rem;
+  margin-bottom: 3rem;
+  grid-auto-rows: 1fr;
+}
+
+.leftSection {
+  grid-column: span 2;
+  flex-direction: column;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.titleWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 1rem;
+  background: linear-gradient(to bottom, #059EDA, #3C62AE);
+  color: white;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  font-weight: bold;
+}
+
+.cardContent {
+  padding: 1rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.15);
+  background-color: white;
+}
+
+.bigPercentage {
+  font-size: rfs(4.65rem);
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.progressContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.progressWrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.progressWrapper svg {
+  max-width: 100px;
+}
+
+.rightSection {
+  grid-column: span 8;
+}
+
+.progressWrapper {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 5px;
+}
+
+.progressWrapper:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.boldText {
+  font-weight: bold;
+}
+
+.progressTitle {
+  margin-bottom: 10%;
+}
+
+.progressWrapper svg {
+  max-width: 90px;
+  margin: 0 auto;
+}
+
+@media (max-width: 576px) {
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 3rem;
+  }
+}
+

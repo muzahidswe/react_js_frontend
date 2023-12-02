@@ -1,0 +1,25 @@
+.wrapper {
+  margin-bottom: 1rem;
+}
+
+.label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.input {
+  min-width: 225px;
+  display: block;
+  border: 1px solid black;
+  background-color: transparent;
+  border-radius: 0.5rem;
+  outline: none;
+  padding: 5px 10px;
+}
+
+.error {
+  font-size: 12px;
+  color: red;
+  margin-top: 0.25rem;
+}

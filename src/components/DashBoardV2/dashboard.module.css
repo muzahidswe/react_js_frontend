@@ -1,0 +1,324 @@
+.container {
+  min-height: 100vh;
+  padding-bottom: 5%;
+  background-color: #F0F3F4;
+}
+
+.input {
+  /* display: block; */
+  width: 100%;
+  min-width: 200px;
+  display: block;
+  background-color: white;
+  border-radius: 0.8rem;
+  outline: none;
+  padding: 0 10px;
+}
+
+.topBar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: 100;
+}
+
+.flexSection {
+  padding: 0.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoSection {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+}
+
+.dashboardText {
+  width: fit-content;
+  font-size: rfs(6.2rem);
+  font-weight: bold;
+  text-transform: uppercase;
+  background: linear-gradient(to bottom, #059EDA, #3C62AE);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 0.8;
+  padding-left: 20%;
+}
+
+.dashboardH {
+  font-weight: 1000;
+    background: -webkit-linear-gradient(#3A65B0, #079CD8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Roboto';
+}
+
+.userDateWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 50px;
+    left: 20%;
+    position: absolute;
+}
+
+.dateWrapper .react-daterange-picker {
+  border-radius: 0.8rem;
+}
+
+.dateWrapper {
+  margin-right: 3rem;
+  border: 1px solid;
+  border-image-slice: 1;
+  border-radius: 0.5rem;
+  border-image-source: linear-gradient(to bottom, #059EDA, #3C62AE);
+  padding: 1rem;
+  padding-top: 1.2rem;
+  position: relative;
+}
+
+.dateText {
+  width: 9rem;
+  position: absolute;
+  top: -0.7rem;
+  left: 1rem;
+  background-color: white;
+  font-size: rfs(1rem);
+  text-align: center;
+}
+
+.liveWrapper {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  width: 40px;
+  height: 40px;
+  border: 5px double;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.liveWrapperAnimate {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+}
+
+.ribonWrapper {
+  height: 12px;
+  width: 100%;
+  display: flex;
+}
+
+.contentWrapper {
+  height: 100%;
+  padding: 0 8vw;
+  padding-top: 6.5rem;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+}
+
+.bottomLogo {
+    display:none;
+  position: absolute;
+  top: calc(100vh - 110px - 80px);
+  left: 0;
+  width: 110px;
+  opacity: 0.5;
+}
+
+.filterSectionWrapper {
+  margin-bottom: 1.5rem;
+}
+
+.selectionWrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 0.5rem;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+.submitButton {
+  height: fit-content;
+  border-style: none;
+  padding: 4px 2rem;
+  border-radius: 0.8rem;
+  background: linear-gradient(to bottom, #059EDA, #3C62AE);
+  color: white;
+}
+
+.logoutBtn {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  border-style: none;
+  background-color: transparent;
+  color: white;
+}
+
+.name {
+  font-size: 80px;
+}
+
+.circleOuter {
+  border: 1px solid #EC3463;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: relative;
+  opacity: .8;
+  -webkit-animation: circle 2s ease-in-out infinite;
+  animation: circle 2s ease-in-out infinite;
+}
+
+.circleInner {
+  background: #EC3463;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  position: absolute;
+  opacity: .8;
+}
+
+.circleInner:after {
+  content: '';
+  display: block;
+  border: 2px solid #EC3463;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  top: -6px;
+  left: -6px;
+  position: absolute;
+  opacity: .8;
+  -webkit-animation: circle 2s ease-in-out .2s infinite;
+  animation: circle 2s ease-in-out .2s infinite;
+}
+
+
+@-webkit-keyframes circle {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  to {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+@keyframes circle {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  to {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+.circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  background-color: #EC3463;
+}
+
+@media (max-width: 1600px) {
+  .contentWrapper {
+    padding: 0 3vw;
+    padding-top: 6.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .topBar {
+    padding: 0.5rem 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logoSection {
+    margin-bottom: 1rem;
+  }
+
+  .logo {
+    width: 80px;
+  }
+
+  .userDateWrapper {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .dateWrapper {
+    margin-right: 0;
+    padding: 1rem;
+    padding-top: 1.2rem;
+    position: relative;
+  }
+
+  .userImage {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  .contentWrapper {
+    padding: 0 8px;
+    padding-top: 11rem;
+  }
+
+  .selectionWrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    justify-content: space-evenly;
+  }
+
+  .liveWrapperAnimate {
+    position: fixed;
+    top: 4.5rem;
+    right: 0.5rem;
+  }
+
+  .liveWrapper {
+    top: 4.5rem;
+    right: 0.5rem;
+    z-index: 101;
+  }
+
+  .circle {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+.dropdown-content{
+    z-index: 99999;
+}

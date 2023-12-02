@@ -1,0 +1,27 @@
+.buttonWrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+}
+
+.button {
+    background-color: #1BC5BD;
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 1.5rem;
+    border-radius: 0.8rem;
+    border-style: none;
+}
+
+@media (max-width: 576px) {
+    .buttonWrapper {
+        margin-bottom: 2rem;
+    }
+
+    .button {
+        font-size: 12px;
+        padding: 6px 1.5rem;
+    }
+}

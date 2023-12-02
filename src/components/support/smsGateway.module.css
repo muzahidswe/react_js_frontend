@@ -1,0 +1,18 @@
+.gatewayItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  max-width: calc(200px + 5vw);
+  margin-bottom: 1rem;
+}
+
+.label {
+  font-weight: bold;
+  flex: 1;
+  text-transform: capitalize;
+}
+
+.input {
+  cursor: pointer;
+  flex: 1;
+}

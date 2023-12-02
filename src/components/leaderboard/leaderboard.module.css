@@ -1,0 +1,382 @@
+.container {
+    padding: 1rem;
+    /* background-color: white; */
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 1rem;
+    position: relative;
+}
+
+.leftSection {
+    background-color: white;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.unnotiLogo {
+    width: 100px;
+}
+
+.title {
+    color: #1E519F;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    /* font-family: 'Nimbus', '-apple-system', 'BlinkMacSystemFont', "Segoe UI", "Roboto"; */
+}
+
+.line {
+    width: 100%;
+    height: 3px;
+    background-color: #0090D1;
+}
+
+.tableHeaderWrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    margin: 0.5rem 0;
+}
+
+.tableHeaderItem {
+    color: #4E4E4E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.territoryHeader {
+    border-right: 3px solid #0090D1;
+}
+
+.listWrapper {
+    width: 100%;
+}
+
+.listItem {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    color: #0D2454;
+    background-color: #DDE0E1;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+}
+
+.listItem:first-child {
+    border: 2px solid #0D2454;
+    border-radius: 1rem;
+    background-color: white;
+}
+
+.listItem:last-child {
+    margin-bottom: 0;
+}
+
+.listNameWrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 0.5rem;
+    align-items: center;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    padding: 0.4rem 1rem;
+    font-size: 18px;
+    font-weight: 500;
+    border-right: 3px solid #F4F7F9;
+}
+
+.dpName {
+    text-align: center;
+}
+
+.angleUp {
+    color: #5DEA53;
+}
+
+.angleDown {
+    color: #F56161;
+}
+
+.minus {
+    color: #E7CA05;
+}
+
+.smallText {
+    line-height: 0.2;
+    font-size: 12px;
+}
+
+.listProgressWrapper {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 0.5rem;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0.3rem 6rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    text-align: center;
+}
+
+.lineWrapper {
+    height: fit-content;
+    background-color: white;
+    border-radius: 1.2rem;
+    display: flex;
+    align-items: center;
+    padding: 3px;
+}
+
+.progressBar {
+    border-radius: 1rem;
+}
+
+.rightSection {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    /* justify-content: space-between; */
+    min-height: 70vh;
+}
+
+.trophyTextWrapper {
+    display: flex;
+    gap: 0.5rem;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.trophyImage {
+    height: 70px;
+}
+
+.bestText {
+    color: #0D2454;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.performanceText {
+    color: #0D2454;
+    font-size: 30px;
+    font-weight: 650;
+    line-height: 1;
+}
+
+.performerInfoWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #0D2454;
+}
+
+.performerImage {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    border: 5px solid #0092D2;
+    border-radius: 100%;
+}
+
+.performerName {
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: underline;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+}
+
+.performerDesignation {
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.mapNationalAvgWrapper {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.map {
+    width: 120px;
+}
+
+.nationalAverageWrapper {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+    border-radius: 2rem;
+}
+
+.nationalAvgText {
+    font-size: 25px;
+    font-weight: bold;
+    color: #4E4E4E;
+    line-height: 1;
+}
+
+.smallLine {
+    width: 50px;
+    height: 4px;
+    background-color: #0092D2;
+    margin-top: 8px;
+}
+
+.nationalAvgPercentage {
+    font-size: 40px;
+    font-weight: bold;
+    color: #1C519F;
+    line-height: 1;
+}
+
+.dateWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 20px;
+    font-weight: bold;
+    color: #0D2454;
+}
+
+
+@media (max-width: 1400px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .tableHeaderItem {
+        font-size: 18px;
+    }
+
+    .listNameWrapper {
+        font-size: 15px;
+        padding: 0.3rem 1rem;
+    }
+
+    .smallText {
+        line-height: 0.2;
+        font-size: 10px;
+    }
+
+    .listProgressWrapper {
+        font-size: 15px;
+        padding: 0.3rem 6rem;
+    }
+
+    .trophyImage {
+        height: 60px;
+    }
+    
+    .bestText {
+        font-size: 30px;
+    }
+    
+    .performanceText {
+        font-size: 25px;
+    }
+
+    .performerName {
+        font-size: 16px;
+    }
+    
+    .performerDesignation {
+        font-size: 13px;
+    }
+
+    .map {
+        width: 100px;
+    }
+    
+    .nationalAvgText {
+        font-size: 20px;
+    }
+    
+    .dateWrapper {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {    
+    .wrapper {
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+    }
+
+    .title {
+        font-size: 25px;
+    }
+
+    .tableHeaderItem {
+        font-size: 16px;
+    }
+
+    .listNameWrapper {
+        font-size: 14px;
+    }
+
+    .listProgressWrapper {
+        font-size: 14px;
+        padding: 0.3rem 1rem;
+    }
+
+    .lineWrapper {
+        width: 60px;
+        padding: 0;
+    }
+
+    .trophyImage {
+        height: 55px;
+    }
+    
+    .bestText {
+        font-size: 30px;
+    }
+    
+    .performanceText {
+        font-size: 25px;
+    }
+
+    .performerImage {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .dateWrapper {
+        font-size: 20px;
+    }
+}
+
+@media (-webkit-device-pixel-ratio: 1.25) {
+    .container {
+        zoom: 0.8;
+    }
+}
+
+@media (-webkit-device-pixel-ratio: 1.5) {
+    .container {
+        zoom: 0.9;
+    }
+}

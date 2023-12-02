@@ -1,0 +1,19 @@
+.wrapper {
+}
+
+.label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.input {
+  /* display: block; */
+  width: 100%;
+  min-width: 200px;
+  display: block;
+  background-color: white;
+  border-radius: 0.8rem;
+  outline: none;
+  padding: 0 10px;
+}

@@ -1,0 +1,316 @@
+.wrapper {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+}
+
+.leftSection {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-gap: 2rem;
+}
+
+.cardView {
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  background-color: white;
+  box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.chartTitle {
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.circularCardView {
+  padding: 1rem;
+}
+
+.creditUtilizationWrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.progressWrapper {
+  flex: 1;
+  text-align: center;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.progressWrapper svg {
+  width: 120px;
+  height: 120px;
+}
+
+.progressValue {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  user-select: none;
+  color: #1E519F;
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+
+.rightSection {
+  height: fit-content;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-gap: 2rem;
+}
+
+.rightCardContent {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+}
+
+.titleIcon {
+  margin-bottom: 5px;
+}
+
+.sectionTitle {
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+.amountWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  color: black;
+}
+
+.totalAmount {
+  color: #1E519F;
+  font-size: 2.3rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.secondaryAmount {
+  font-size: 2.3rem;
+  font-weight: bold;
+  color: #0092D2;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.boldText {
+  font-weight: bold;
+}
+
+.line {
+  height: 80px;
+  width: 1px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.outletAmountWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.perItem {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 1rem 0;
+  color: black;
+}
+
+.horizontalLine {
+  height: 1px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.sectionTitleSmallDevice {
+  display: none;
+}
+
+.unnotiLogo {
+  position: absolute;
+  right: 0;
+  bottom: -50px;
+  width: 250px;
+}
+
+@media (max-width: 1500px) {
+  .wrapper {
+    grid-gap: 1rem;
+  }
+
+  .leftSection {
+    grid-gap: 1rem;
+  }
+
+  .cardView {
+    padding: 1rem;
+  }
+
+  .progressWrapper svg {
+    width: 90px;
+    height: 90px;
+  }
+
+  .progressValue {
+    font-size: 1.6rem;
+  }
+
+  .rightSection {
+    grid-gap: 1rem;
+  }
+
+  .rightCardContent {
+    grid-template-columns: 1fr;
+  }
+
+  .sectionTitleSmallDevice {
+    display: block;
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .sectionTitle {
+    display: none;
+  }
+
+  .totalAmount {
+    font-size: 2rem;
+  }
+  
+  .secondaryAmount {
+    font-size: 2rem;
+  }
+
+  .line {
+    height: 60px;
+  }
+
+  .perItem {
+    padding: 10px 0;
+  }
+
+  .unnotiLogo {
+    position: absolute;
+    right: 0;
+    bottom: -90px;
+    width: 200px;
+  }
+}
+
+@media screen and (min-width:577px) and (max-width:1280px) and (orientation:landscape) {
+  .chartTitle {
+    font-size: 1rem;
+  }
+
+  .progressValue {
+    font-size: 1.5rem;
+  }
+
+  .sectionTitleSmallDevice {
+    font-size: 1rem;
+  }
+
+  .totalAmount {
+    font-size: 1.6rem;
+  }
+
+  .secondaryAmount {
+    font-size: 1.3rem;
+  }
+
+  .rightSection .secondaryAmount {
+    font-size: 1.6rem;
+  }
+
+  .amountWrapper {
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (min-width:577px) and (max-width:850px) and (orientation:portrait) {
+  .wrapper {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+  }
+  
+  .leftSection {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .rightSection {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .rightCardContent {
+    height: 100%;
+  }
+
+  .chartTitle {
+    font-size: 1rem;
+  }
+
+  .progressValue {
+    font-size: 1.6rem;
+  }
+
+  .sectionTitleSmallDevice {
+    font-size: 1rem;
+  }
+
+  .totalAmount {
+    font-size: 1.6rem;
+  }
+
+  .secondaryAmount {
+    font-size: 1.3rem;
+  }
+
+  .rightSection .totalAmount {
+    font-size: 2rem;
+  }
+
+  .rightSection .secondaryAmount {
+    font-size: 2rem;
+  }
+
+  .amountWrapper {
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 576px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .unnotiLogo {
+    right: auto;
+    left: -60px;
+    bottom: -120px;
+    width: 150px;
+    z-index: -1;
+  }
+}
+
+
+

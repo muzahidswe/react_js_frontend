@@ -1,0 +1,118 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+}
+
+.cardView {
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  background-color: white;
+  box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topCardContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progressWrapper {
+  margin-left: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.progressWrapper svg {
+  width: 160px;
+  height: 160px;
+}
+
+.progressValue {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 95px;
+  height: 95px;
+  border-radius: 100%;
+  margin: auto;
+  user-select: none;
+  background-color: #1E519F;
+  color: white;
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+
+.text {
+  color: black;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+.map {
+  width: 80%;
+}
+
+@media (max-width: 1500px) {
+  .wrapper {
+    grid-gap: 1rem;
+  }
+
+  .cardView {
+    padding: 1rem;
+  }
+
+  .progressWrapper {
+    margin-left: 0;
+  }
+
+  .progressWrapper svg {
+    width: 120px;
+    height: 120px;
+  }
+
+  .progressValue {
+    width: 75px;
+    height: 75px;
+    font-size: 1.8rem;
+  }
+
+  .text {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+
+  .map {
+    width: 95%;
+  }
+}
+
+@media screen and (min-width:577px) and (max-width:850px) and (orientation:portrait) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .progressValue {
+    font-size: 1.5rem;
+  }
+
+  .text {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 576px) {
+  
+}
+

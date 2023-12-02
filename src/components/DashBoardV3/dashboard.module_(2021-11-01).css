@@ -1,0 +1,107 @@
+.container {
+  min-height: calc(100vh - 65px);
+  color: #1E519F;
+  background-color: #F5F7F9;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.topBar {
+  width: calc(100% - 70px);
+  position: fixed;
+  top: 0;
+  left: 70px;
+  background-color: #F5F7F9;
+  padding: 0.5rem 1rem 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.logo {
+  width: 150px;
+  height: 75px;
+}
+
+.selectionWrapper {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 1rem;
+}
+
+.submitButton {
+  height: fit-content;
+  border-style: none;
+  padding: 8.5px 1rem;
+  border-radius: 0.8rem;
+  background: linear-gradient(to bottom, #059EDA, #3C62AE);
+  color: white;
+}
+
+.contentWrapper {
+  height: 100%;
+  padding: 0 1rem;
+  padding-top: 3.5rem;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 2rem;
+}
+
+.leftSection {
+  grid-column: span 4;
+}
+
+.rightSection {
+  grid-column: span 8;
+}
+
+@media (max-width: 1500px) {
+  .container {
+    padding-bottom: 1rem;
+  }
+
+  .contentWrapper {
+    padding: 0 1rem;
+    padding-top: 4.2rem;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 3fr;
+  }
+
+  .topBar {
+    padding: 0.5rem 1rem 1rem 1rem;
+  }
+
+  .logo {
+    width: 130px;
+    margin-right: 0.5rem;
+    height: 70px;
+  }
+
+  .selectionWrapper {
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    padding-bottom: 1rem;
+  }
+
+  .submitButton {
+    padding: 8.5px 1rem;
+    margin-top: 7px;
+    margin-right: 2rem;
+  }
+
+  .leftSection {
+    grid-column: span 1;
+  }
+  
+  .rightSection {
+    grid-column: span 1;
+  }
+}

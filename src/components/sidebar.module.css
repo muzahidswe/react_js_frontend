@@ -1,0 +1,16 @@
+.logoutBtnWrapper {
+    display: grid;
+    place-content: center;
+}
+
+.btnWrapper {
+    display: flex;
+    gap: 0.5rem;
+    color: white;
+    padding: 0.5rem 2rem;
+    background: linear-gradient(to bottom, #059EDA, #3C62AE);
+}
+
+.btnWrapper:hover {
+    color: white;
+}
